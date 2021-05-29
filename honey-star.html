@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MYSHOPEE | Ecommerce site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo/myshopee.png" alt="store-logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="index.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/shopping-cart.png" alt="cart" width="40px">
+                <img class="menu-icon" src="images/bars.png" alt="menu-bar" onclick="menuOpen()">
+            </div>
+        </div>
+    </div>
+
+    <!--Single product detail-->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img id="productImg" src="images/Honey-Stars-Eco-Pack 10x500g.jpg" width="360px">
+
+                <div class="small-img-row">
+                    <div class="small-img-col" id="img1"  onclick="gallery(img1);">
+                        <img class="small-img" src="images/Honey-Stars-Eco-Pack 10x500g.jpg">
+                    </div>
+                    <div class="small-img-col" id="img2" onclick="gallery(img2);">
+                        <img class="small-img"  src="images/honey-star-2.jpg">
+                    </div>
+                    <div class="small-img-col" id="img3" onclick="gallery(img3);">
+                        <img class="small-img"  src="images/no-image.png" >
+                    </div>
+                    <div class="small-img-col" id="img4" onclick="gallery(img4);">
+                        <img class="small-img"  src="images/no-image.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Product</p>
+                <h1>Honey-Stars-Eco-Pack 500g</h1>
+                <h4>RM7.00</h4>
+                <select>
+                    <option>Variation</option>
+                    <option>300g</option>
+                    <option>500g</option>
+                    <option>700g</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>• Delicious honey star-shaped whole grain breakfast cereal<br>
+                    • With carbohydrates and fibre to provide you energy<br>
+                    • Best served with 125ml of full cream milk for one serving <br>
+                    • Contains approximately 16 servings<br>
+                    • Store in a cool dry place. After opening, store in air-tight container to keep contents fresh<br>
+                    • With fibre, vitamins and minerals<br>
+                    • Pack size: 500g per pack<br>
+                    • Halal certified<br>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Shopper who view this product also view-->
+    <div class="small-container">
+        <h2 class="title">Shopper who view this product also view these products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Honey-Stars-Eco-Pack 10x500g.jpg" alt="honey-stars 10x500g">
+                <h4>Honey Stars Eco Pack (1x500g)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>RM15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Nestle-Cereal-Koko-Krunch-170-gm.png" alt="koko-krunch 10x500g">
+                <h4>Koko Krunch (170g)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>RM15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/milo-2kg.jpg" alt="milo 2kg">
+                <h4>Honey Stars Eco Pack (10x500g)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>RM15.00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/logo/myshopee.png">
+                    <p>Download App for Android and IOS platform</p>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS platform</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <!--<ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>-->
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Designed by: Ng Choon Yan</p>
+        </div>
+    </div>
+<!--JavaScript-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight= "0px";
+
+    function menuOpen(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight= "200px";
+        }
+        else{
+            MenuItems.style.maxHeight= "0px";
+        }
+    }
+</script>
+
+
+<!--JS for product gallery-->
+<script>
+    function gallery(p){
+        var big_image = document.getElementById('productImg');
+        big_image.src = p.firstElementChild.src;
+    }
+
+    /*var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementById("small-img");
+
+    
+    smallImg[0].onclick = function()
+    {
+        productImg.src = smallImg[0].src;
+    }
+
+    smallImg[1].onclick = function()
+    {
+        productImg.src = smallImg[1].src;
+    }
+
+    smallImg[2].onclick = function()
+    {
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function()
+    {
+        productImg.src = smallImg[3].src;
+    }*/
+
+</script>
+</body>

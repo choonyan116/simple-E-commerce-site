@@ -1,0 +1,137 @@
+<?php 
+    include 'connection.php' 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MYSHOPEE | Ecommerce site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo/myshopee.png" alt="store-logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="index.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/shopping-cart.png" alt="cart" width="40px">
+                <img class="menu-icon" src="images/bars.png" alt="menu-bar" onclick="menuOpen()">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Product Edit section-->
+    <!--<div class="product-changes">
+        <div class="small-container">
+            <button class="add-new">Add new +</button>
+            <div class="product-row">
+                <div class="product-col">
+                    <img src="images/honey-star-2.jpg">
+                </div>
+                <div class="product-col">
+                    <h3>Honey Stars Eco Pack (1x500g)</h3>
+                </div>
+                <div class="product-col">
+                    <p>RM7.00</p>
+                </div>
+                <div class="product-col">
+                    <p>3</p>
+                </div>
+                <div class="product-col">
+                    <button>Edit</button>
+                </div>
+                <div class="product-col">
+                    <button>Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>-->
+        <!--Update product form-->
+        <form action="" method="POST">
+            <div class="form-group">
+                <label>Picture </label>
+                <input type="text" id="pic-src" name="pic-src">
+                <label>Product name </label>
+                <input type="text" id="product-name" name="product-name">
+                <label>Price (RM) </label>
+                <input type="text" id="product-price" name="product-price">
+                <label>Quantity </label>
+                <input type="number" id="product-qty" name="product-qty">
+                <button type="submit" name="submit">Update Product</button>
+            </div>
+        </form>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/logo/myshopee.png">
+                    <p>Download App for Android and IOS platform</p>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS platform</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <!--<ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>-->
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Designed by: Ng Choon Yan</p>
+        </div>
+    </div>
+<!--JavaScript-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight= "0px";
+
+    function menuOpen(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight= "200px";
+        }
+        else{
+            MenuItems.style.maxHeight= "0px";
+        }
+    }
+</script>
